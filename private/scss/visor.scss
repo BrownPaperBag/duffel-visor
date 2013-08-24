@@ -1,0 +1,49 @@
+@import "compass/css3/images";
+@import "compass/css3/box-shadow";
+
+$visor-height: 40px;
+
+.duffel-visor,
+.duffel-visor-spacer {
+  height: $visor-height;
+}
+.duffel-visor {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(100, 101, 101);
+  border-bottom: 1px solid #BBB;
+  @include filter-gradient(#656565, #acacac, vertical);
+  @include background-image(linear-gradient(top,  rgba(101,101,101,1) 0%,rgba(172,172,172,1) 100%));
+  @include box-shadow(#AAA 0 2px 2px);
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      a {
+        display: block;
+        height: $visor-height;
+        line-height: $visor-height;
+        padding: 0 20px;
+        border-left: 1px solid #AAA;
+        border-right: 1px solid #AAA;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFF;
+        text-shadow: 1px 1px 0 #000;
+
+        &:hover,
+        &.active {
+          text-decoration: none;
+          background-color: rgb(14,14,14);
+          @include filter-gradient(#0e0e0e, #7d7e7d, vertical);
+          @include background-image(linear-gradient(top,  rgba(14,14,14,1) 0%, rgba(125,126,125,1) 100%));
+        }
+      }
+    }
+  }
+}
+
