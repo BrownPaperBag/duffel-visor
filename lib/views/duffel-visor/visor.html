@@ -3,7 +3,8 @@
     <ul>
         {% for item in visorItems %}
             <li>
-            <a {% if item.active %} class="active" {% endif %} href="{$ item.uri $}">{$ item.name $}</a>
+                <a {% if item.active %} class="active" {% endif %} href="{$ item.uri $}">{$ item.name $}</a>
+            </li>
         {% endfor %}
     </ul>
 </div>
