@@ -1,3 +1,9 @@
-<div class="angular-application" application-name="visor" ng-controller="VisorController">
-
+<div class="duffel-visor-spacer"></div>
+<div class="duffel-visor angular-application" application-name="visor" ng-controller="VisorController">
+    <ul>
+        {% for item in visorItems %}
+            <li>
+            <a {% if item.active %} class="active" {% endif %} href="{$ item.uri $}">{$ item.name $}</a>
+        {% endfor %}
+    </ul>
 </div>
