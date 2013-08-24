@@ -10,5 +10,6 @@
     }
   ],
   "dependencies": {
+    "nunjucks": "0.1.x"
   }
 }
