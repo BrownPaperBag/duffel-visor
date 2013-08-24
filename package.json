@@ -10,6 +10,7 @@
     }
   ],
   "dependencies": {
-    "nunjucks": "0.1.x"
+    "nunjucks": "0.1.x",
+    "underscore": "1.5.x"
   }
 }
