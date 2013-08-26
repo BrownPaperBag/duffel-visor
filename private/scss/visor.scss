@@ -13,6 +13,7 @@ $visor-height: 40px;
   width: 100%;
   background-color: rgb(100, 101, 101);
   border-bottom: 1px solid #BBB;
+  z-index: 10000;
   @include filter-gradient(#656565, #acacac, vertical);
   @include background-image(linear-gradient(top,  rgba(101,101,101,1) 0%,rgba(172,172,172,1) 100%));
   @include box-shadow(#AAA 0 2px 2px);
