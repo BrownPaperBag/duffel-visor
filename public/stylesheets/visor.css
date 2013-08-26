@@ -11,6 +11,7 @@
   width: 100%;
   background-color: #646565;
   border-bottom: 1px solid #BBB;
+  z-index: 10000;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF656565', endColorstr='#FFACACAC');
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #656565), color-stop(100%, #acacac));
@@ -22,15 +23,15 @@
   -moz-box-shadow: #aaaaaa 0 2px 2px;
   box-shadow: #aaaaaa 0 2px 2px;
 }
-/* line 20, ../../private/scss/visor.scss */
+/* line 21, ../../private/scss/visor.scss */
 .duffel-visor ul {
   list-style: none;
 }
-/* line 23, ../../private/scss/visor.scss */
+/* line 24, ../../private/scss/visor.scss */
 .duffel-visor ul li {
   display: inline-block;
 }
-/* line 26, ../../private/scss/visor.scss */
+/* line 27, ../../private/scss/visor.scss */
 .duffel-visor ul li a {
   display: block;
   height: 40px;
@@ -43,7 +44,7 @@
   color: #FFF;
   text-shadow: 1px 1px 0 #000;
 }
-/* line 39, ../../private/scss/visor.scss */
+/* line 40, ../../private/scss/visor.scss */
 .duffel-visor ul li a:hover, .duffel-visor ul li a.active {
   text-decoration: none;
   background-color: #0e0e0e;
