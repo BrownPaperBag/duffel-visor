@@ -10,7 +10,7 @@
     }
   ],
   "dependencies": {
-    "nunjucks": "0.1.x",
+    "nunjucks": "git://github.com/jlongster/nunjucks.git#master",
     "underscore": "1.5.x"
   }
 }
