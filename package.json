@@ -1,6 +1,6 @@
 {
   "name": "duffel-visor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Michael Robinson <mike@pagesofinterest.net>",
   "description": "Provides a visor visible when a user with permissions to access any visor item is logged in",
   "contributors": [
