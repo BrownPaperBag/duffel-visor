@@ -22,7 +22,8 @@ $visor-height: 40px;
     list-style: none;
 
     li {
-      display: inline-block;
+      float: left;
+      margin-left: -1px;
 
       a {
         display: block;
