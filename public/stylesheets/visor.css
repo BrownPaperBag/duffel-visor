@@ -29,9 +29,10 @@
 }
 /* line 24, ../../private/scss/visor.scss */
 .duffel-visor ul li {
-  display: inline-block;
+  float: left;
+  margin-left: -1px;
 }
-/* line 27, ../../private/scss/visor.scss */
+/* line 28, ../../private/scss/visor.scss */
 .duffel-visor ul li a {
   display: block;
   height: 40px;
@@ -44,7 +45,7 @@
   color: #FFF;
   text-shadow: 1px 1px 0 #000;
 }
-/* line 40, ../../private/scss/visor.scss */
+/* line 41, ../../private/scss/visor.scss */
 .duffel-visor ul li a:hover, .duffel-visor ul li a.active {
   text-decoration: none;
   background-color: #0e0e0e;
