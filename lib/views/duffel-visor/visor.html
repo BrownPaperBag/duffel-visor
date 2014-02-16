@@ -1,10 +1,12 @@
-<div class="duffel-visor-spacer"></div>
-<div class="duffel-visor angular-application" application-name="visor" ng-controller="VisorController">
-    <ul>
-        {% for item in visorItems %}
-            <li>
-                <a {% if item.active %} class="active" {% endif %} href="{$ item.uri $}">{$ item.name $}</a>
-            </li>
-        {% endfor %}
-    </ul>
-</div>
+<nav class="ng-application navbar navbar-default navbar-fixed-top" role="navigation"
+    application-name="visor" ng-controller="VisorController">
+  <div class="container">
+      <ul>
+          {% for item in visorItems %}
+          <li>
+          <a {% if item.active %} class="active" {% endif %} href="{$ item.uri $}">{$ item.name $}</a>
+          </li>
+          {% endfor %}
+      </ul>
+  </div>
+</nav>
