@@ -14,7 +14,7 @@
     "url": "https://github.com/BrownPaperBag/duffel-visor"
   },
   "dependencies": {
-    "nunjucks": "git://github.com/jlongster/nunjucks.git#master",
-    "underscore": "1.5.x"
+    "nunjucks": "",
+    "underscore": ""
   }
 }
