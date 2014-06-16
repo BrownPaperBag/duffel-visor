@@ -1,5 +1,8 @@
 (function() {
   'use strict';
 
-  angular.module('visor', ['ui.bootstrap', 'visor.controllers']);
+  angular.module('visor', [
+    'duffel-visor',
+    'ui.bootstrap', 'visor.controllers'
+  ]);
 })();
