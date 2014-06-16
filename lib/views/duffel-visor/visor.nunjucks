@@ -1,10 +1,10 @@
-<nav class="ng-application navbar navbar-default navbar-fixed-top" role="navigation"
-    application-name="visor" ng-controller="VisorController">
-  <div class="container">
+<nav class="ng-application navbar navbar-default navbar-fixed-top duffel-visor" role="navigation"
+    application-name="visor" ng-controller="VisorController" duffel-visor>
+  <div class="container duffel-visor__container">
       <ul>
           {% for item in visorItems %}
-          <li>
-          <a {% if item.active %} class="active" {% endif %} href="{$ item.uri $}">{$ item.name $}</a>
+          <li class="duffel-visor__container__item">
+            <a {% if item.active %} class="active" {% endif %} href="{$ item.uri $}">{$ item.name $}</a>
           </li>
           {% endfor %}
       </ul>
