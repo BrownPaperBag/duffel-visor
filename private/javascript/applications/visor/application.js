@@ -3,6 +3,7 @@
 
   angular.module('visor', [
     'duffel-visor',
-    'ui.bootstrap', 'visor.controllers'
+    'ui.bootstrap', 'visor.controllers',
+    'ui.gravatar'
   ]);
 })();
