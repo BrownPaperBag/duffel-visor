@@ -1,0 +1,19 @@
+.user-section {
+
+  .user-section__details,
+  .user-section__gravatar {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .user-section__details {
+    text-align: right;
+    a {
+      display: block;
+
+      &:first-child {
+        margin-top: 5px;
+      }
+    }
+  }
+}
