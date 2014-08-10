@@ -3,9 +3,24 @@
   <div class="container duffel-visor__container">
       <ul class="nav navbar-nav">
           {% for item in visorItems %}
-          <li class="duffel-visor__container__item">
-            <a {% if item.active %} class="active" {% endif %} href="{$ item.uri $}">{$ item.name $}</a>
-          </li>
+
+            {% if item.children %}
+              <li class="duffel-visor__container__item" dropdown>
+                <a dropdown-toggle {% if item.active %} class="active" {% endif %}>{$ item.name $}</a>
+                <ul dropdown-menu class="dropdown-menu" role="menu">
+                  {% for child in item.children %}
+                    <li><a href="{$ child.uri $}">{$ child.name $}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+
+            {% else %}
+
+              <li class="duffel-visor__container__item">
+                <a {% if item.active %} class="active" {% endif %} href="{$ item.uri $}">{$ item.name $}</a>
+              </li>
+            {% endif %}
+
           {% endfor %}
       </ul>
       <div class="pull-right user-section">
